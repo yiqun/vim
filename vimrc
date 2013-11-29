@@ -9,7 +9,17 @@ colorscheme desert
 set nocompatible
 
 " 编码
-" set enc=utf-8
+set enc=utf-8
+
+" For windows gvim
+" set termencoding=utf-8
+" set fileencoding=utf-8
+" set fileencodings=ucs-bom,utf-8,chinese,cp936
+" source $VIMRUNTIME/delmenu.vim
+" source $VIMRUNTIME/menu.vim
+" language message zh_CN.utf-8
+" set guioptions-=m
+" set guioptions-=T
 
 " 开启文件检测功能
 filetype on
@@ -86,9 +96,11 @@ let g:EasyMotion_leader_key = '<Leader>'
 "autocmd BufReadPost *.js,*.php call tagbar#autoopen()
 
 " Minibuferpl
-let g:miniBufExplMapCTabSwitchBufs=0
-let g:miniBufExplMapWindowsNavVim=0
-let g:miniBufExplMapWindowNavArrows=0
+let g:miniBufExplMapWindowNavVim = 1 
+let g:miniBufExplMapWindowNavArrows = 1 
+let g:miniBufExplMapCTabSwitchBufs = 1 
+let g:miniBufExplModSelTarget = 1 
+nmap <F6> :MBEOpen<CR>
 
 " vimwiki
 " 是否在词条文件保存时就输出html  这个会让保存大词条比较慢
@@ -96,11 +108,11 @@ let g:miniBufExplMapWindowNavArrows=0
 " 'auto_export': 1,
  
 " 多个维基项目的配置
-let g:vimwiki_list = [{'path' : '/data/vimwiki/wiki/',
-		\ 'template_path'     : '/data/vimwiki/tmpl/',
+let g:vimwiki_list = [{'path' : '/Users/riekiquan/vimwiki/wiki/',
+		\ 'template_path'     : '/Users/riekiquan/vimwiki/tmpl/',
 		\ 'template_default'  : 'default',
 		\ 'template_ext'      : '.tmpl',
-		\ 'path_html'         : '/data/vimwiki/html/',
+		\ 'path_html'         : '/Users/riekiquan/vimwiki/html/',
 		\ 'nested_syntaxes'   : {'JScript': 'js', 'Php': 'php', 'Css': 'css', 'Bash': 'bash', 'Sql': 'sql'} }]
  
 " 对中文用户来说，我们并不怎么需要驼峰英文成为维基词条
