@@ -3,7 +3,8 @@ call pathogen#infect()
 call pathogen#helptags()
 
 set background=dark
-colorscheme desert
+"colorscheme desert
+colorscheme default
 
 " 禁用 vi 键盘模式
 set nocompatible
@@ -108,11 +109,11 @@ nmap <F6> :MBEOpen<CR>
 " 'auto_export': 1,
  
 " 多个维基项目的配置
-let g:vimwiki_list = [{'path' : '/Users/riekiquan/vimwiki/wiki/',
-		\ 'template_path'     : '/Users/riekiquan/vimwiki/tmpl/',
+let g:vimwiki_list = [{'path' : '/Users/riekiquan/Workshop/yiqun.github.io/wiki/',
+		\ 'template_path'     : '/Users/riekiquan/Workshop/yiqun.github.io/tmpl/',
 		\ 'template_default'  : 'default',
 		\ 'template_ext'      : '.tmpl',
-		\ 'path_html'         : '/Users/riekiquan/vimwiki/html/',
+		\ 'path_html'         : '/Users/riekiquan/Workshop/yiqun.github.io/',
 		\ 'nested_syntaxes'   : {'JScript': 'js', 'Php': 'php', 'Css': 'css', 'Bash': 'bash', 'Sql': 'sql'} }]
  
 " 对中文用户来说，我们并不怎么需要驼峰英文成为维基词条
