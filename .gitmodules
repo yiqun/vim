@@ -40,3 +40,9 @@
 [submodule "bundle/tabman.vim"]
 	path = bundle/tabman.vim
 	url = https://github.com/kien/tabman.vim.git
+[submodule "bundle/Google-translator"]
+	path = bundle/Google-translator
+	url = https://github.com/vim-scripts/Google-translator.git
+[submodule "bundle/gtrans.vim"]
+	path = bundle/gtrans.vim
+	url = https://github.com/bolasblack/gtrans.vim.git
