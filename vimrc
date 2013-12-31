@@ -31,8 +31,8 @@ filetype indent on
 syntax on
 
 " 缩进
-set tabstop=4
-set shiftwidth=4
+set tabstop=2
+set shiftwidth=2
 set softtabstop=2
 set autoindent
 set cindent
@@ -135,3 +135,4 @@ let g:vimwiki_valid_html_tags='a,b,i,s,u,sub,sup,kbd,del,br,hr,div,code,h1,h2,h3
 
 nmap <F8> :Vimwiki2HTML<CR>
 nmap <F7> :VimwikiAll2HTML<CR>
+nmap <F3> :Gtrans<CR>
